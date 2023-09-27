@@ -60,7 +60,7 @@ const App = () => {
         </div>
       ) : (
         <div className="empty">
-          <h2>Wala yung Movies Na Hinahanap mo!</h2>
+          <h2>Wala!</h2>
         </div>
       )}
     </div>
