@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
               ? movie.Poster
               : "https://via.placeholder.com/400"
           }
-          alt={movie.Title}
+          alt={movie.title}
         />
       </div>
 
