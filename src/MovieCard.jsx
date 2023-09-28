@@ -1,8 +1,20 @@
 import React from "react";
 
 const MovieCard = ({ movie }) => {
+  const sourceLink = movie.SourceLink; // Replace "SourceLink" with the actual property name in your static data
+
+  const handleCardClick = () => {
+    if (sourceLink) {
+      window.open(sourceLink, "_blank");
+    }
+  };
+
   return (
-    <div className="movie">
+    <div
+      className="movie"
+      onClick={handleCardClick}
+      style={{ cursor: "pointer" }}
+    >
       <div>
         <p>{movie.Year}</p>
       </div>
