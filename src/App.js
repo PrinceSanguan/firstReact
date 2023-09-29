@@ -6,13 +6,12 @@ import MovieCard from "./MovieCard";
 const staticData = {
   Search: [
     {
-      Title: "Batman Begins",
-      Year: "2005",
-      Type: "movie",
+      Title: "One Piece Episode 1",
+      Year: "2004",
+      Type: "anime",
       Poster:
-        "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      SourceLink:
-        "https://www.bilibili.tv/en/video/2047758847?bstar_from=bstar-web.homepage.recommend.all",
+        "https://upload.wikimedia.org/wikipedia/en/8/8c/One_Piece_-_Season_1_-_DVD_1_-_Japanese.jpg",
+      SourceLink: "https://yugenanime.tv/watch/798/one-piece/1/",
     },
     {
       Title: "Batman v Superman: Dawn of Justice",
@@ -57,7 +56,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>PrinceNetflix</h1>
+      <h1>PrinceSanguanNetflix</h1>
       <div className="search">
         <input
           placeholder="Search for Movies"
@@ -75,7 +74,7 @@ const App = () => {
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
-            <MovieCard key={movie.imdbID} movie={movie} />
+            <MovieCard key={movie.Poster} movie={movie} />
           ))}
         </div>
       ) : (
