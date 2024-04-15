@@ -15,10 +15,9 @@ const staticData = {
     },
     {
       Title: "Yowamushi Pedal Episode 1",
-      Year: "20019",
+      Year: "2019",
       Type: "anime",
-      Poster:
-        "https://animetourism88.com/application/files/3516/7827/0929/Web_YP_KV3.jpg",
+      Poster: "/images/yowamishu.jpg",
       SourceLink:
         "https://www1.animixplayer.top/watch/yowamushi-pedal-episode-1-e9334",
     },
